@@ -247,6 +247,39 @@ class ViewController: UIViewController {
         UIApplication.shared.isIdleTimerDisabled = false
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
+    
+    @IBAction func sendBtnClick() {
+        let amount = 10000000
+        let to = "mkniG9zf4gHhpygcukWp9RkTswmxDxEMfJ"
+        self.walletManager?.spendingLimit = UInt64(100000000)
+        var tx = self.walletManager?.wallet?.createTransaction(forAmount: UInt64(amount), toAddress: to)
+        
+        DispatchQueue.walletQueue.async { [weak self] in
+            guard let myself = self else { assert(false, "myelf didn't exist"); return }
+
+            if (myself.walletManager?.signTransaction(tx!, pin: ""))! {
+                myself.walletManager?.peerManager?.publishTx(tx!, completion: { success, error in
+                    DispatchQueue.main.async {
+                        if let error = error {
+//                            completion(.publishFailure(error))
+                            print("error \(error)")
+                        } else {
+//                            myself.setMetaData()
+//                            completion(.success)
+                        }
+                    }
+                })
+                
+                
+            }
+        }
+        
+        
+    }
+    
+    func publishTx(tx:BRTxRef)  {
+        
+    }
 }
 
 

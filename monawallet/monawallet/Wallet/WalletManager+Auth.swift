@@ -272,26 +272,26 @@ extension WalletManager : WalletAuthenticator {
     
     // sign the given transaction using pin authentication
     func signTransaction(_ tx: BRTxRef, forkId: Int = 0, pin: String) -> Bool {
-        guard authenticate(pin: pin) else { return false }
+//        guard authenticate(pin: pin) else { return false }
         return signTx(tx, forkId: forkId)
     }
     
     // sign the given transaction using biometric authentication
-//    func signTransaction(_ tx: BRTxRef, biometricsPrompt: String, completion: @escaping (BiometricsResult) -> ()) {
-//        do {
-//            let spendLimit: Int64 = try keychainItem(key: KeychainKey.spendLimit) ?? 0
-//            guard let wallet = wallet, wallet.amountSentByTx(tx) - wallet.amountReceivedFromTx(tx) + wallet.totalSent <= UInt64(spendLimit) else {
-//                return completion(.failure)
-//            }
-//        }
-//        catch { return completion(.failure) }
+    func signTransaction(_ tx: BRTxRef, biometricsPrompt: String, completion: @escaping (BiometricsResult) -> ()) {
+        do {
+            let spendLimit: Int64 = try keychainItem(key: KeychainKey.spendLimit) ?? 0
+            guard let wallet = wallet, wallet.amountSentByTx(tx) - wallet.amountReceivedFromTx(tx) + wallet.totalSent <= UInt64(spendLimit) else {
+                return completion(.failure)
+            }
+        }
+        catch { return completion(.failure) }
 //        store.perform(action: biometricsActions.setIsPrompting(true))
-//        authenticate(biometricsPrompt: biometricsPrompt) { result in
+        authenticate(biometricsPrompt: biometricsPrompt) { result in
 //            self.store.perform(action: biometricsActions.setIsPrompting(false))
-//            guard result == .success else { return completion(result) }
-//            completion(self.signTx(tx) == true ? .success : .failure)
-//        }
-//    }
+            guard result == .success else { return completion(result) }
+            completion(self.signTx(tx) == true ? .success : .failure)
+        }
+    }
 
     func buildBitIdKey(url: String, index: Int) -> BRKey? {
         return autoreleasepool {

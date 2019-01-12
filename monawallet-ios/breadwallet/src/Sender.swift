@@ -1,4 +1,4 @@
-﻿//
+//
 //  Sender.swift
 //  breadwallet
 //
@@ -73,7 +73,7 @@ class Sender {
                 myself.walletManager.signTransaction(tx, biometricsPrompt: biometricsMessage, completion: { result in
                     if result == .success {
                         myself.publish(completion: completion)
-                    } else {
+                    }	 else {
                         if result == .failure || result == .fallback {
                             myself.verifyPin(tx: tx, withFunction: verifyPinFunction, completion: completion)
                         }
