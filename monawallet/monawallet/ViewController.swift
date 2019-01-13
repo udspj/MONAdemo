@@ -95,8 +95,20 @@ class ViewController: UIViewController {
         
     }
     
-    func setTransactions(transactions: [String])  {
+    func setTransactions(transactions: [Transaction])  {
         //update UI
+        print("transactions")
+        let rate = Rate.init(code: "CNY", name: "RMB", rate: 9)
+        
+        for tx in transactions {
+            let attributedText = tx.descriptionString(isBtcSwapped: false, rate: rate, maxDigits: 8)
+
+            let address = String(format: tx.direction.addressTextFormat, tx.toAddress ?? "")
+            let status = tx.status
+//            comment.text = transaction.comment
+            let availability = tx.shouldDisplayAvailableToSpend ? S.Transaction.available : ""
+            print("\(attributedText.string) \(address) \(status) \(availability)")
+        }
     }
     
     private func showReceived(amount: UInt64) {
@@ -135,7 +147,8 @@ class ViewController: UIViewController {
         updateTimer = nil
         DispatchQueue.walletQueue.async {
             guard let txRefs = self.walletManager?.wallet?.transactions else { return }
-            let transactions = self.makeTransactionViewModels(transactions: txRefs, walletManager: self.walletManager!)
+            let transactions = self.makeTransactionViewModels(transactions: txRefs, walletManager: self.walletManager!,  rate: nil)
+
             if transactions.count > 0 {
                 DispatchQueue.main.async {
                     self.setTransactions(transactions: transactions)
@@ -144,7 +157,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func makeTransactionViewModels(transactions: [BRTxRef?], walletManager: WalletManager) -> [String] {
+    func makeTransactionViewModels(transactions: [BRTxRef?], walletManager: WalletManager, rate: Rate?) -> [Transaction] {
         
         let t = transactions.flatMap{ $0 }.sorted {
             if $0.pointee.timestamp == 0 {
@@ -156,7 +169,7 @@ class ViewController: UIViewController {
             }
             }
         return t.flatMap {
-            return "\($0.pointee.txHash)"
+            return Transaction($0, walletManager: walletManager, rate: rate)
         }
     }
     
