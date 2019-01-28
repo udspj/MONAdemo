@@ -1,0 +1,6 @@
+framework module Pods_RippleWallet {
+  umbrella header "Pods-RippleWallet-umbrella.h"
+
+  export *
+  module * { export * }
+}
