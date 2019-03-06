@@ -19,23 +19,26 @@ class ViewController: UIViewController {
         recoverAddress()
     }
     
+    // MARK: 新用户登入时新建钱包地址　新規アカウントアドレスを作る
     func generateAddress() {
-        let seed = Ripple.GenerateSeed()
-        let secret = Ripple.EncodeSeed(seed!, method: KeyType.secp256k1)
-        let keypair = KeyPair.deriveKeypair(seed: seed!);
-        let address = Ripple.GetRippleAddress(Data(hex: keypair.publicKey))
+        let seed = Ripple.GenerateSeed() // 生成一个随机数种子　ランダムシードを作る
+        let secret = Ripple.EncodeSeed(seed!, method: KeyType.secp256k1) // 对种子进行编码，secret和种子是等价的，secret需要用户自行导出并妥善保管　シードをエンコーダする。シークレットとシードは対等。シークレットを导き出して、丁寧に保存されるのは大事なこと。
+        let keypair = KeyPair.deriveKeypair(seed: seed!); // 通过种子生成密钥对（私钥和公钥）　シードに通ってキーペアを作る
+        let address = Ripple.GetRippleAddress(Data(hex: keypair.publicKey)) // 通过密钥对生成用户钱包地址　キーペアに通ってを作る
         print("generate ripple account: \n  secret:\(secret)\n  address:\(address)")
     }
     
+    // MARK: 已有钱包的用户导入自己的密钥，解析出钱包地址　シークレットをインポートして、アドレスをデコードする
     func recoverAddress()  {
         let secret = "ssTdSmKzF4g8Gu7FTmiiiByMxynJ3"
-        let seed = Ripple.DecodeSeed(secret)
-        let keypair = KeyPair.deriveKeypair(seed: seed);
-        let address = Ripple.GetRippleAddress(Data(hex: keypair.publicKey))
+        let seed = Ripple.DecodeSeed(secret) // 把secret解码出种子　シークレットからアドレスをデコードする
+        let keypair = KeyPair.deriveKeypair(seed: seed); // 通过种子生成密钥对（私钥和公钥）　シードに通ってキーペアを作る
+        let address = Ripple.GetRippleAddress(Data(hex: keypair.publicKey)) // 通过密钥对生成用户钱包地址　キーペアに通ってを作る
         print("recover ripple account: \n  secret:\(secret)\n  address:\(address)")
     }
 }
 
+// MARK: 两种加密方式　二つ暗語化タイプ
 enum KeyType {
     case secp256k1
     case ed25519
@@ -43,15 +46,15 @@ enum KeyType {
 
 struct KeyPair {
     
-    public let privateKey : String
-    public let publicKey : String
+    public let privateKey : String // 私钥 プライベートキー
+    public let publicKey : String // 公钥 パブリックキー
     
     public init(pri:String, pub:String) {
         privateKey = pri
         publicKey = pub
     }
     
-    static let curveOrder = BInt(hex: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141")!
+    static let curveOrder = BInt(hex: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141")! // 固定用法  慣用使い方
 
     public static func deriveKeypair(seed:Data) -> KeyPair {
         let prefix = "00";
@@ -97,7 +100,6 @@ struct KeyPair {
 }
 
 class Ripple {
-    // MARK: Seed
     public static func GenerateSeed() -> Data? {
         
         let bytesCount = 16

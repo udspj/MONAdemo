@@ -3,3 +3,166 @@ RippleWallet/Pods/Pods.xcodeproj/xcuserdata/neosoft.xcuserdatad/xcschemes/Pods-R
 RippleWallet/Pods/Pods.xcodeproj/xcuserdata/neosoft.xcuserdatad/xcschemes/secp256k1.swift.xcscheme
 RippleWallet/RippleWallet.xcworkspace/contents.xcworkspacedata
 RippleWallet/RippleWallet.xcworkspace/xcuserdata/neosoft.xcuserdatad/UserInterfaceState.xcuserstate
+WalletDemo/WalletDemo.xcworkspace/contents.xcworkspacedata
+WalletDemo/WalletDemo.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+WalletDemo/WalletDemo.xcworkspace/xcuserdata/neosoft.xcuserdatad/UserInterfaceState.xcuserstate
+WalletDemo/Pods/Manifest.lock
+WalletDemo/Pods/CryptoSwift/LICENSE
+WalletDemo/Pods/CryptoSwift/README.md
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/AES.Cryptors.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/AES.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Array+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Authenticator.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BatchedCollection.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Bit.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockCipher.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockDecryptor.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockEncryptor.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Blowfish.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/CBCMAC.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/ChaCha20.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Checksum.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Cipher.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/CMAC.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Collection+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/CompactMap.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Cryptor.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Cryptors.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Digest.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/DigestType.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/HKDF.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/HMAC.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Int+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/MD5.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/NoPadding.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Operators.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Padding.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Poly1305.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Rabbit.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/RandomBytesSequence.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/SecureBytes.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/SHA1.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/SHA2.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/SHA3.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/StreamDecryptor.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/StreamEncryptor.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/String+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/UInt128.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/UInt16+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/UInt32+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/UInt64+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/UInt8+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Updatable.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Utils.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/ZeroPadding.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/AEAD/AEAD.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/AEAD/AEADChaCha20Poly1305.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/BlockMode.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/BlockModeOptions.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/CBC.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/CCM.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/CFB.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/CipherModeWorker.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/CTR.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/ECB.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/GCM.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/OFB.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/BlockMode/PCBC.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/AES+Foundation.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Array+Foundation.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Data+Extension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/HMAC+Foundation.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/String+FoundationExtension.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Utils+Foundation.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/PKCS/PBKDF1.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/PKCS/PBKDF2.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/PKCS/PKCS5.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/PKCS/PKCS7.swift
+WalletDemo/Pods/CryptoSwift/Sources/CryptoSwift/PKCS/PKCS7Padding.swift
+WalletDemo/Pods/Pods.xcodeproj/project.pbxproj
+WalletDemo/Pods/Pods.xcodeproj/xcuserdata/neosoft.xcuserdatad/xcschemes/CryptoSwift.xcscheme
+WalletDemo/Pods/Pods.xcodeproj/xcuserdata/neosoft.xcuserdatad/xcschemes/Pods-WalletDemo.xcscheme
+WalletDemo/Pods/Pods.xcodeproj/xcuserdata/neosoft.xcuserdatad/xcschemes/secp256k1.swift.xcscheme
+WalletDemo/Pods/Pods.xcodeproj/xcuserdata/neosoft.xcuserdatad/xcschemes/xcschememanagement.plist
+WalletDemo/Pods/secp256k1.swift/LICENSE
+WalletDemo/Pods/secp256k1.swift/README.md
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1-config.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1_ec_mult_static_context.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1_main.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/contrib/lax_der_parsing.c
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/contrib/lax_der_parsing.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/contrib/lax_der_privatekey_parsing.c
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/contrib/lax_der_privatekey_parsing.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/include/secp256k1.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/include/secp256k1_ecdh.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/include/secp256k1_recovery.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/basic-config.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/ecdsa.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/ecdsa_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/eckey.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/eckey_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/ecmult.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/ecmult_const.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/ecmult_const_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/ecmult_gen.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/ecmult_gen_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/ecmult_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/field.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/field_10x26.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/field_10x26_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/field_5x52.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/field_5x52_asm_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/field_5x52_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/field_5x52_int128_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/field_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/group.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/group_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/hash.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/hash_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/num.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/num_gmp.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/num_gmp_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/num_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scalar.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scalar_4x64.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scalar_4x64_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scalar_8x32.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scalar_8x32_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scalar_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scalar_low.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scalar_low_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scratch.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/scratch_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/secp256k1.c
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/util.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/modules/ecdh/main_impl.h
+WalletDemo/Pods/secp256k1.swift/secp256k1/Classes/secp256k1/src/modules/recovery/main_impl.h
+WalletDemo/Pods/Target Support Files/CryptoSwift/CryptoSwift-dummy.m
+WalletDemo/Pods/Target Support Files/CryptoSwift/CryptoSwift-Info.plist
+WalletDemo/Pods/Target Support Files/CryptoSwift/CryptoSwift-prefix.pch
+WalletDemo/Pods/Target Support Files/CryptoSwift/CryptoSwift-umbrella.h
+WalletDemo/Pods/Target Support Files/CryptoSwift/CryptoSwift.modulemap
+WalletDemo/Pods/Target Support Files/CryptoSwift/CryptoSwift.xcconfig
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-acknowledgements.markdown
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-acknowledgements.plist
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-dummy.m
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-frameworks-Debug-input-files.xcfilelist
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-frameworks-Debug-output-files.xcfilelist
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-frameworks-Release-input-files.xcfilelist
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-frameworks-Release-output-files.xcfilelist
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-frameworks.sh
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-Info.plist
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo-umbrella.h
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo.debug.xcconfig
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo.modulemap
+WalletDemo/Pods/Target Support Files/Pods-WalletDemo/Pods-WalletDemo.release.xcconfig
+WalletDemo/Pods/Target Support Files/secp256k1.swift/secp256k1.swift-dummy.m
+WalletDemo/Pods/Target Support Files/secp256k1.swift/secp256k1.swift-Info.plist
+WalletDemo/Pods/Target Support Files/secp256k1.swift/secp256k1.swift-prefix.pch
+WalletDemo/Pods/Target Support Files/secp256k1.swift/secp256k1.swift-umbrella.h
+WalletDemo/Pods/Target Support Files/secp256k1.swift/secp256k1.swift.modulemap
+WalletDemo/Pods/Target Support Files/secp256k1.swift/secp256k1.swift.xcconfig
